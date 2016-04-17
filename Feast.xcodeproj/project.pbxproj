@@ -28,8 +28,64 @@
 		BF9EBB841CC3A7F300E387ED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB821CC3A7F300E387ED /* Model.xcdatamodeld */; };
 		BF9EBB8F1CC3A94A00E387ED /* _Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB8E1CC3A94A00E387ED /* _Restaurant.swift */; };
 		BF9EBB911CC3A94E00E387ED /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB901CC3A94E00E387ED /* Restaurant.swift */; };
+		BF9EBB941CC3AB5900E387ED /* FeastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB931CC3AB5900E387ED /* FeastAPI.swift */; };
+		BF9EBBB41CC3AC8700E387ED /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9EBBA11CC3AC4B00E387ED /* Alamofire.framework */; };
 		BF9EBBB61CC3ACE400E387ED /* USCManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9EBBB51CC3ACE400E387ED /* USCManagedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9EBBB91CC3AE1C00E387ED /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBBB81CC3AE1C00E387ED /* JSONParser.swift */; };
+		BF9EBBBB1CC3B02600E387ED /* RestaurantParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBBBA1CC3B02600E387ED /* RestaurantParser.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF9EBBA01CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		BF9EBBA21CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		BF9EBBA41CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		BF9EBBA61CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		BF9EBBA81CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		BF9EBBAA1CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		BF9EBBAC1CC3AC4B00E387ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF13254C1CC3A319000E1376 /* Feast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +97,11 @@
 		BF9EBB831CC3A7F300E387ED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BF9EBB8E1CC3A94A00E387ED /* _Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _Restaurant.swift; path = Model/_Restaurant.swift; sourceTree = "<group>"; };
 		BF9EBB901CC3A94E00E387ED /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Model/Restaurant.swift; sourceTree = "<group>"; };
+		BF9EBB931CC3AB5900E387ED /* FeastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeastAPI.swift; sourceTree = "<group>"; };
+		BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = External/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		BF9EBBB51CC3ACE400E387ED /* USCManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USCManagedObject.h; sourceTree = "<group>"; };
+		BF9EBBB81CC3AE1C00E387ED /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		BF9EBBBA1CC3B02600E387ED /* RestaurantParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9EBBB41CC3AC8700E387ED /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BF13254E1CC3A319000E1376 /* Feast */,
+				BF9EBB951CC3AC4200E387ED /* Dependencies */,
 				BF13254D1CC3A319000E1376 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				BF13254F1CC3A319000E1376 /* Feast.h */,
+				BF9EBBB71CC3ADFC00E387ED /* Parsers */,
 				BF9EBB761CC3A51700E387ED /* Database */,
+				BF9EBB921CC3AB4900E387ED /* Networking */,
 				BF9EBB7B1CC3A66000E387ED /* Extensions */,
 				BF9EBB771CC3A52000E387ED /* Supporting Files */,
 			);
@@ -133,6 +197,45 @@
 				BF9EBB8E1CC3A94A00E387ED /* _Restaurant.swift */,
 			);
 			name = Machine;
+			sourceTree = "<group>";
+		};
+		BF9EBB921CC3AB4900E387ED /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB931CC3AB5900E387ED /* FeastAPI.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		BF9EBB951CC3AC4200E387ED /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		BF9EBB971CC3AC4B00E387ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBBA11CC3AC4B00E387ED /* Alamofire.framework */,
+				BF9EBBA31CC3AC4B00E387ED /* Alamofire iOS Tests.xctest */,
+				BF9EBBA51CC3AC4B00E387ED /* Alamofire.framework */,
+				BF9EBBA71CC3AC4B00E387ED /* Alamofire OSX Tests.xctest */,
+				BF9EBBA91CC3AC4B00E387ED /* Alamofire.framework */,
+				BF9EBBAB1CC3AC4B00E387ED /* Alamofire tvOS Tests.xctest */,
+				BF9EBBAD1CC3AC4B00E387ED /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF9EBBB71CC3ADFC00E387ED /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBBB81CC3AE1C00E387ED /* JSONParser.swift */,
+				BF9EBBBA1CC3B02600E387ED /* RestaurantParser.swift */,
+			);
+			name = Parsers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +298,12 @@
 			mainGroup = BF1325421CC3A319000E1376;
 			productRefGroup = BF13254D1CC3A319000E1376 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF9EBB971CC3AC4B00E387ED /* Products */;
+					ProjectRef = BF9EBB961CC3AC4B00E387ED /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BF13254B1CC3A319000E1376 /* Feast */,
@@ -202,6 +311,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BF9EBBA11CC3AC4B00E387ED /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BF9EBBA01CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF9EBBA31CC3AC4B00E387ED /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = BF9EBBA21CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF9EBBA51CC3AC4B00E387ED /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BF9EBBA41CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF9EBBA71CC3AC4B00E387ED /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = BF9EBBA61CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF9EBBA91CC3AC4B00E387ED /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BF9EBBA81CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF9EBBAB1CC3AC4B00E387ED /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = BF9EBBAA1CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF9EBBAD1CC3AC4B00E387ED /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BF9EBBAC1CC3AC4B00E387ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF13254A1CC3A319000E1376 /* Resources */ = {
@@ -236,8 +397,11 @@
 			files = (
 				BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */,
 				BF9EBB8F1CC3A94A00E387ED /* _Restaurant.swift in Sources */,
+				BF9EBBB91CC3AE1C00E387ED /* JSONParser.swift in Sources */,
+				BF9EBB941CC3AB5900E387ED /* FeastAPI.swift in Sources */,
 				BF9EBB911CC3A94E00E387ED /* Restaurant.swift in Sources */,
 				BF9EBB7F1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift in Sources */,
+				BF9EBBBB1CC3B02600E387ED /* RestaurantParser.swift in Sources */,
 				BF9EBB7E1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift in Sources */,
 				BF9EBB841CC3A7F300E387ED /* Model.xcdatamodeld in Sources */,
 			);
