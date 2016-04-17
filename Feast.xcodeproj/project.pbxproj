@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF1325501CC3A319000E1376 /* Feast.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13254F1CC3A319000E1376 /* Feast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */; };
+		BF9EBB7E1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB7C1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift */; };
+		BF9EBB7F1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB7D1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		BF13254F1CC3A319000E1376 /* Feast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feast.h; sourceTree = "<group>"; };
 		BF1325511CC3A319000E1376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		BF9EBB7C1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Conveniences.swift"; sourceTree = "<group>"; };
+		BF9EBB7D1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Conveniences.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			children = (
 				BF13254F1CC3A319000E1376 /* Feast.h */,
 				BF9EBB761CC3A51700E387ED /* Database */,
+				BF9EBB7B1CC3A66000E387ED /* Extensions */,
 				BF9EBB771CC3A52000E387ED /* Supporting Files */,
 			);
 			path = Feast;
@@ -69,6 +74,15 @@
 				BF1325511CC3A319000E1376 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF9EBB7B1CC3A66000E387ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB7C1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift */,
+				BF9EBB7D1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */,
+				BF9EBB7F1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift in Sources */,
+				BF9EBB7E1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
