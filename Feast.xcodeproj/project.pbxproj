@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BF1325501CC3A319000E1376 /* Feast.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13254F1CC3A319000E1376 /* Feast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF13254C1CC3A319000E1376 /* Feast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF13254F1CC3A319000E1376 /* Feast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feast.h; sourceTree = "<group>"; };
 		BF1325511CC3A319000E1376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +49,26 @@
 			isa = PBXGroup;
 			children = (
 				BF13254F1CC3A319000E1376 /* Feast.h */,
-				BF1325511CC3A319000E1376 /* Info.plist */,
+				BF9EBB761CC3A51700E387ED /* Database */,
+				BF9EBB771CC3A52000E387ED /* Supporting Files */,
 			);
 			path = Feast;
+			sourceTree = "<group>";
+		};
+		BF9EBB761CC3A51700E387ED /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		BF9EBB771CC3A52000E387ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF1325511CC3A319000E1376 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +250,7 @@
 		BF1325551CC3A319000E1376 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -241,12 +262,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.sparksc.Feast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BF1325561CC3A319000E1376 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -280,6 +303,7 @@
 				BF1325561CC3A319000E1376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
