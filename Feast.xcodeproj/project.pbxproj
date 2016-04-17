@@ -6,11 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BF9EBB871CC3A90B00E387ED /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF9EBB881CC3A90B00E387ED /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				BF9EBB8B1CC3A90F00E387ED /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BF1325501CC3A319000E1376 /* Feast.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13254F1CC3A319000E1376 /* Feast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */; };
 		BF9EBB7E1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB7C1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift */; };
 		BF9EBB7F1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB7D1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift */; };
+		BF9EBB841CC3A7F300E387ED /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB821CC3A7F300E387ED /* Model.xcdatamodeld */; };
+		BF9EBB8F1CC3A94A00E387ED /* _Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB8E1CC3A94A00E387ED /* _Restaurant.swift */; };
+		BF9EBB911CC3A94E00E387ED /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9EBB901CC3A94E00E387ED /* Restaurant.swift */; };
+		BF9EBBB61CC3ACE400E387ED /* USCManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9EBBB51CC3ACE400E387ED /* USCManagedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +38,10 @@
 		BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		BF9EBB7C1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Conveniences.swift"; sourceTree = "<group>"; };
 		BF9EBB7D1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Conveniences.swift"; sourceTree = "<group>"; };
+		BF9EBB831CC3A7F300E387ED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BF9EBB8E1CC3A94A00E387ED /* _Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _Restaurant.swift; path = Model/_Restaurant.swift; sourceTree = "<group>"; };
+		BF9EBB901CC3A94E00E387ED /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Model/Restaurant.swift; sourceTree = "<group>"; };
+		BF9EBBB51CC3ACE400E387ED /* USCManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USCManagedObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				BF9EBB791CC3A54D00E387ED /* DatabaseManager.swift */,
+				BF9EBB851CC3A7FC00E387ED /* Model */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -85,6 +108,33 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		BF9EBB851CC3A7FC00E387ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB821CC3A7F300E387ED /* Model.xcdatamodeld */,
+				BF9EBBB51CC3ACE400E387ED /* USCManagedObject.h */,
+				BF9EBB8D1CC3A92600E387ED /* Machine */,
+				BF9EBB8C1CC3A91B00E387ED /* Human */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF9EBB8C1CC3A91B00E387ED /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB901CC3A94E00E387ED /* Restaurant.swift */,
+			);
+			name = Human;
+			sourceTree = "<group>";
+		};
+		BF9EBB8D1CC3A92600E387ED /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EBB8E1CC3A94A00E387ED /* _Restaurant.swift */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1325501CC3A319000E1376 /* Feast.h in Headers */,
+				BF9EBBB61CC3ACE400E387ED /* USCManagedObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +180,9 @@
 					BF13254B1CC3A319000E1376 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					BF9EBB871CC3A90B00E387ED = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = BF1325461CC3A319000E1376 /* Build configuration list for PBXProject "Feast" */;
@@ -144,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				BF13254B1CC3A319000E1376 /* Feast */,
+				BF9EBB871CC3A90B00E387ED /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -158,14 +213,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF9EBB8B1CC3A90F00E387ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/mogenerator -m \"Feast/Model/Model.xcdatamodeld\" -O \"Feast/Model\" --swift --template-var scalarsWhenNonOptional=true --template-path \"Feast/Model/mogenerator/templates\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF1325471CC3A319000E1376 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF9EBB7A1CC3A54D00E387ED /* DatabaseManager.swift in Sources */,
+				BF9EBB8F1CC3A94A00E387ED /* _Restaurant.swift in Sources */,
+				BF9EBB911CC3A94E00E387ED /* Restaurant.swift in Sources */,
 				BF9EBB7F1CC3A66B00E387ED /* NSManagedObjectContext+Conveniences.swift in Sources */,
 				BF9EBB7E1CC3A66B00E387ED /* NSManagedObject+Conveniences.swift in Sources */,
+				BF9EBB841CC3A7F300E387ED /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +374,20 @@
 			};
 			name = Release;
 		};
+		BF9EBB891CC3A90B00E387ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF9EBB8A1CC3A90B00E387ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,7 +409,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BF9EBB881CC3A90B00E387ED /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9EBB891CC3A90B00E387ED /* Debug */,
+				BF9EBB8A1CC3A90B00E387ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF9EBB821CC3A7F300E387ED /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF9EBB831CC3A7F300E387ED /* Model.xcdatamodel */,
+			);
+			currentVersion = BF9EBB831CC3A7F300E387ED /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Model/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF1325431CC3A319000E1376 /* Project object */;
 }
